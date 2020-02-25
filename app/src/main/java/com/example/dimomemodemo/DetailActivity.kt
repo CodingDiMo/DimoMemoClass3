@@ -58,6 +58,7 @@ class DetailActivity : AppCompatActivity() {
                 .setNegativeButton("취소", null)
                 .setPositiveButton("확인", DialogInterface.OnClickListener { dialog, which ->
                     supportActionBar?.title = titleEdit.text.toString()
+                    toolbarLayout.title = titleEdit.text.toString()
                 }).show()
         }
     }
